@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: burlywood;
+        }
+        h1{
+            text-align: center;
+            color: red;
+            font-size: 3rem;
+            font-weight: 800;
+
+        }
+        p{
+            text-align: center;
+            color:darkolivegreen;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pattern Using Loops</h1>
+    <p>Open Console By Pressing F12 to View Result... </p>
+
+    <script>
+        console.log( "\n" , "Pattern 1")
+        let Output = document.querySelector("#Output")
+        let result = ""
+        for(let i = 0; i <= 2; i++){     //row ko define krta he
+            for(let a = 0; a <= 4; a++){ //column ko define krta he
+            result += "*" 
+            console.log("*")  
+            }
+            result += "\n"   //line break krta he
+        }
+        console.log(result)
+    </script>
+
+    <script>
+
+        console.log( "\n" , "Pattern 2")
+        for(let i = 1; i <= 4; i++){
+            let rows = ""
+            for(let j = 1; j<= i; j++){
+                rows +=  "*"
+            }
+            console.log(rows)
+        }
+    </script>
+
+    <script>
+
+        console.log( "\n" , "Pattern 3")
+        for(let i = 1; i <= 4; i++){
+            let cols = ""
+            for(let j = 4; j >= i; j--){
+                cols += "*"
+            }
+            console.log(cols)
+        }
+    </script>
+
+    <script>
+        
+        console.log( "\n" , "Pattern 4")
+        for(let i = 1; i <= 4; i++){
+            let rows = ""
+            for(let j = 1; j <= i; j++){
+                rows += j
+            }
+            console.log(rows)
+        }
+    </script>
+
+    <script>
+        
+        console.log( "\n" , "Pattern 5")
+        for(let i = 1; i <= 4; i++){
+            let rows = ""
+            for(let j = 4; j >= i; j--){
+                rows += j
+            }
+            console.log(rows)
+        }
+    </script>
+</body>
+</html>
