@@ -24,6 +24,24 @@
             font-size: 2rem;
             font-weight: 700;
         }
+        .p1{
+            display: none;
+        }
+        button{
+            padding: 10px;
+            width: 150px;
+            border-radius:10px ;
+            color: black;
+            font-weight: 700;
+            cursor: pointer;
+            background-color: black;
+            color: azure;
+        }
+        button:hover{
+            color: aqua;
+            transform: scale(1.1);
+            transition: 0.2s ease-in;
+        }
     </style>
 </head>
 <body>
@@ -103,5 +121,24 @@
             console.log(rows)
         }
     </script>
+
+<p>Pattern 7</p>
+<p id="pattern7" class="p1"></p>
+<button onclick="document.getElementById('pattern7').style.display = 'block' ">Prints Last Pattern</button>
+    <script>
+
+
+    let Pattern = document.getElementById("pattern7")
+
+        for(let i = 1; i <= 15; i+= 2){
+            let rows = ""
+            for(let j = 1; j <= i; j++){
+                rows += "*"
+            }
+            Pattern.innerHTML += `${rows} <br>`
+        }
+        
+    </script>
+
 </body>
 </html>
